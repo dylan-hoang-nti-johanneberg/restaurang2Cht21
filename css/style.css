@@ -2,6 +2,11 @@ body {
  margin: 0;
 }
 
+.no_color {
+    text-decoration: none;
+    color: black;
+}
+
 #wrapper {
     display: grid;
     grid-template-areas: 
@@ -25,15 +30,45 @@ body {
     background-color: teal;
 }
 
-#main {
+#main_start {
     display: grid;
     grid-area: mn;
     grid-template-areas: 
     'img ar'
+    'img ar'
     'img btn'
     ;
+    grid-template-columns: 50% 50%;
     background-color: mediumorchid;
 }
+
+#image_start {
+    display: grid;
+    grid-area: img;
+    background-color: #EED7CE;
+    margin: 1rem 2rem 1rem 2rem;
+}
+
+#text_start {
+    display: grid;
+    grid-area: ar;
+    background-color: #FF87CA;
+    margin: 1rem 2rem 0 2rem;
+}
+
+#meny_start {
+    display: grid;
+    grid-area: btn;
+    background-color: #C37B89;
+    margin: 1rem 2rem 1rem 2rem;
+}
+
+#main_meny {
+    display: grid;
+    grid-area: mn;
+    background-color: ;
+}
+
 
 #footer {
     grid-area: ft;
