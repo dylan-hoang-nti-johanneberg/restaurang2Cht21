@@ -22,13 +22,13 @@ body {
 
 #header {
     grid-area: hd;
-    background-color: pink;
+    background-color: white;
 }
 
 #nav {
     display: grid;
     grid-area: nv;
-    background-color: teal;
+    background-color: white;
     grid-template-areas:
     'nv1 nv2 nv3';
 }
@@ -36,6 +36,8 @@ body {
 #nav1, #nav2, #nav3 {
     display: flex;
     justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
 }
 
 #nav1 {
@@ -50,6 +52,10 @@ body {
     grid-area: nv3;
 }
 
+.nav_adjust {
+    font-size: 2rem;
+}
+
 #main_start {
     display: grid;
     grid-area: mn;
@@ -59,39 +65,70 @@ body {
     'img btn'
     ;
     grid-template-columns: 50% 50%;
-    background-color: mediumorchid;
+    grid-template-rows: 3fr 3fr 3fr;
+    background-color: #1f1f1f;
 }
 
 #image_start {
     display: grid;
     grid-area: img;
-    background-color: #EED7CE;
     margin: 1rem 2rem 1rem 2rem;
+    background-image: url(../img/burgir.jpg);
+    background-size: cover;
+    background-position-y: -15rem;
+    border-radius: 1rem;
 }
 
 #text_start {
     display: grid;
     grid-area: ar;
-    background-color: #FF87CA;
+    background-color: white;
     margin: 1rem 2rem 0 2rem;
+    padding: 1.5rem;
+    border-radius: 2rem;
 }
 
 #meny_start {
-    display: grid;
+    display: flex;
     grid-area: btn;
-    background-color: #C37B89;
+    background-color: black;
     margin: 1rem 2rem 1rem 2rem;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2rem;
+}
+
+.title_content {
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.text_content {
+    margin-top: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+#button_text:hover {
+    transition:  0.5s ease-in-out;
+    color: goldenrod;
+    font-family: 'Inter', sans-serif;
+}
+
+.button_meny_text {
+    font-size: 5rem;
+    color: white;
+    font-family: 'Inter', sans-serif;
 }
 
 #main_meny {
     display: grid;
     grid-area: mn;
-    background-color: ;
+    background-color: #1f1f1f;
 }
 
 #footer {
     grid-area: ft;
-    background-color: mediumaquamarine;
+    background-color: white;
 }
 
 #main_meny {
@@ -135,6 +172,7 @@ body {
     'ar img'
     'ar own';
     grid-template-columns: 50% 50%;
+    background-color: #1f1f1f;
 }
 
 #restaurant_info {
