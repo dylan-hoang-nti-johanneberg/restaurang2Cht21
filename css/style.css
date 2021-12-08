@@ -23,6 +23,12 @@ body {
 #header {
     grid-area: hd;
     background-color: white;
+    background-image: url(../img/Logga2.jpg);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position-y: -110px;
+    margin-left: -3rem;
+
 }
 
 #nav {
@@ -46,6 +52,11 @@ body {
 
 #nav2 {
     grid-area: nv2;
+    border-style: solid;
+    border-top: black;
+    border-bottom: black;
+    border-width: 2px;
+    margin: 15px 0px 15px 0px;
 }
 
 #nav3 {
@@ -62,8 +73,7 @@ body {
     grid-template-areas: 
     'img ar'
     'img ar'
-    'img btn'
-    ;
+    'img btn';
     grid-template-columns: 50% 50%;
     grid-template-rows: 3fr 3fr 3fr;
     background-color: #1f1f1f;
@@ -72,7 +82,7 @@ body {
 #image_start {
     display: grid;
     grid-area: img;
-    margin: 1rem 2rem 1rem 2rem;
+    margin: 2rem 2rem 2rem 2rem;
     background-image: url(../img/burgir.jpg);
     background-size: cover;
     background-position-y: -15rem;
@@ -83,7 +93,7 @@ body {
     display: grid;
     grid-area: ar;
     background-color: white;
-    margin: 1rem 2rem 0 2rem;
+    margin: 2rem 2rem 0 2rem;
     padding: 1.5rem;
     border-radius: 2rem;
 }
@@ -92,7 +102,7 @@ body {
     display: flex;
     grid-area: btn;
     background-color: black;
-    margin: 1rem 2rem 1rem 2rem;
+    margin: 1rem 2rem 2rem 2rem;
     justify-content: space-around;
     align-items: center;
     border-radius: 2rem;
@@ -101,11 +111,17 @@ body {
 .title_content {
     font-size: 2rem;
     font-family: 'Inter', sans-serif;
+    margin: 0px;
 }
 
 .text_content {
     margin-top: 0px;
     font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+}
+
+.margin_top {
+    padding-top: 8px;
 }
 
 #button_text:hover {
@@ -115,7 +131,7 @@ body {
 }
 
 .button_meny_text {
-    font-size: 5rem;
+    font-size: 4rem;
     color: white;
     font-family: 'Inter', sans-serif;
 }
@@ -127,8 +143,11 @@ body {
 }
 
 #footer {
+    display: flex;
     grid-area: ft;
     background-color: white;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 #main_meny {
@@ -138,30 +157,104 @@ body {
     'fd1 fd2'
     'fd3 fd4';
     grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
 }
 
 #dish1, #dish2, #dish3, #dish4 {
-    margin: 1rem 3rem 1rem 3rem;
+    margin: 2rem 5rem 2rem 5rem;
 } 
 
 #dish1 {
+    display: grid;
     grid-area: fd1;
+    grid-template-areas:
+    'fdimg1 txt1';
     background-color: blanchedalmond;
+    grid-template-columns: 70% 30%;
 }
 
 #dish2 {
+    display: grid;
     grid-area: fd2;
+    grid-template-areas:
+    'fdimg2 txt2';
     background-color: chocolate;
+    grid-template-columns: 70% 30%;
 }
 
 #dish3 {
+    display: grid;
     grid-area: fd3;
+    grid-template-areas:
+    'fdimg3 txt3';
     background-color: darkgray;
+    grid-template-columns: 70% 30%;
 }
 
 #dish4 {
+    display: grid;
     grid-area: fd4;
-    background-color: darksalmon;
+    grid-template-areas:
+    'fdimg4 txt4';
+    grid-template-columns: 70% 30%;
+    background-color: lightgoldenrodyellow;
+}
+
+#menu_img1 {
+    grid-area: fdimg1;
+    background-image: url(../img/img1_burgir.jpg);
+    background-size: cover;
+    background-position-y: -30px;
+}
+
+#menu_img2 {
+    grid-area: fdimg2;
+    background-image: url(../img/img2_burgir.jpg);
+    background-size: cover;
+    background-position-y: -60px;
+}
+
+#menu_img3 {
+    grid-area: fdimg3;
+    background-image: url(../img/img3_burgir.jpg);
+    background-size: cover;
+    background-position-y: 0px;
+}
+
+#menu_img4 {
+    grid-area: fdimg4;
+    background-image: url(../img/img4_burgir.jpg);
+    background-size: cover;
+    background-position-y: -20px;
+}
+
+.info_decoration {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+}
+
+#text1 {
+    grid-area: txt1;
+    background-color: white;
+    padding: 8px;
+}
+
+#text2 {
+    grid-area: txt2;
+    background-color: white;
+    padding: 8px;
+}
+
+#text3 {
+    grid-area: txt3;
+    background-color: white;
+    padding: 8px;
+}
+
+#text4 {
+    grid-area: txt4;
+    background-color: white;
+    padding: 8px;
 }
 
 #main_om_oss {
@@ -172,23 +265,55 @@ body {
     'ar img'
     'ar own';
     grid-template-columns: 50% 50%;
+    grid-template-rows: 3fr 3fr 3fr;
     background-color: #1f1f1f;
 }
 
 #restaurant_info {
     grid-area: ar;
-    background-color: darkturquoise;
-    margin: 1rem 3rem 1rem 3rem;
+    background-color: white;
+    margin: 2rem 3rem 2rem 3rem;
+    border-radius: 1.5em;
 }
 
 #owner_pic {
     grid-area: img;
-    background-color: dimgrey;
-    margin: 1rem;
+    margin: 2rem 3rem 1rem 2rem;
+    background-image: url(../img/owner\ pic.jpg);
+    background-size: cover;
+    background-position-y: -20px;
+    border-radius: 1.5em;
+}
+
+p.title_content {
+    padding: 2rem 0px 0px 1rem;
 }
 
 #owner_info {
     grid-area: own;
-    background-color: firebrick;
-    margin: 1rem;
+    background-color: white;
+    margin: 1rem 3rem 2rem 2rem;
+    border-radius: 1em;
+}
+
+.margin_for_text {
+    margin: 1rem 1rem 0rem 1rem;
+}
+
+#footer_content1 {
+    font-size: 1.8rem;
+    font-family: 'Inter', sans-serif;
+    margin-left: 1rem;
+}
+
+#footer_content2 {
+    font-size: 1.8rem;
+    font-family: 'Inter', sans-serif;
+    margin-left: 1rem;
+}
+
+#footer_content3 {
+    font-size: 1.8rem;
+    font-family: 'Inter', sans-serif;
+    margin-left: 1rem;
 }
