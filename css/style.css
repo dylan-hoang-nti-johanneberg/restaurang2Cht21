@@ -7,10 +7,15 @@ body {
     color: black;
 }
 
+a.button {
+    text-decoration: none;
+    color: initial;
+}
+
 #wrapper {
     display: grid;
     grid-template-areas: 
-    'hd nv'
+    'lg nv'
     'mn mn'
     'ft ft'
     ;
@@ -20,8 +25,8 @@ body {
     width: 100vw;
 }
 
-#header {
-    grid-area: hd;
+#logo {
+    grid-area: lg;
     background-color: white;
     background-image: url(../img/Logga2.jpg);
     background-size: 60%;
@@ -225,7 +230,7 @@ body {
     grid-area: fdimg4;
     background-image: url(../img/img4_burgir.jpg);
     background-size: cover;
-    background-position-y: -20px;
+    background-position-y: -10px;
 }
 
 .info_decoration {
@@ -285,7 +290,7 @@ body {
     border-radius: 1.5em;
 }
 
-p.title_content {
+p.title_content, .om_oss_title_content {
     padding: 2rem 0px 0px 1rem;
 }
 
