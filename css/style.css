@@ -28,7 +28,7 @@ a.button {
 #logo {
     grid-area: lg;
     background-color: white;
-    background-image: url(../img/Logga2.jpg);
+    background-image: url(../img/Logga.jpg);
     background-size: 60%;
     background-repeat: no-repeat;
     background-position-y: -110px;
@@ -136,7 +136,7 @@ a.button {
 }
 
 .button_meny_text {
-    font-size: 4rem;
+    font-size: 3rem;
     color: white;
     font-family: 'Inter', sans-serif;
 }
@@ -151,8 +151,8 @@ a.button {
     display: flex;
     grid-area: ft;
     background-color: white;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #main_meny {
@@ -166,7 +166,7 @@ a.button {
 }
 
 #dish1, #dish2, #dish3, #dish4 {
-    margin: 2rem 5rem 2rem 5rem;
+    margin: 1rem 5rem 1rem 5rem;
 } 
 
 #dish1 {
@@ -284,7 +284,7 @@ a.button {
 #owner_pic {
     grid-area: img;
     margin: 2rem 3rem 1rem 2rem;
-    background-image: url(../img/owner\ pic.jpg);
+    background-image: url(../img/owner_pic.jpg);
     background-size: cover;
     background-position-y: -20px;
     border-radius: 1.5em;
